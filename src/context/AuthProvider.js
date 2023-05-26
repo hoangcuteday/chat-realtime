@@ -30,7 +30,7 @@ function AuthProvider({ children }) {
 
     return (
         <AuthContext.Provider value={user}>
-            {isLoading ? <Spin /> : children}
+            {isLoading ? <div className="justify-center items-center flex w-full h-screen"><Spin size="large"/> </div> : children}
         </AuthContext.Provider>
     );
 }
