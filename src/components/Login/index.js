@@ -6,7 +6,6 @@ const ggProvider = new GoogleAuthProvider();
 
 function Login() {
 
-    const navigate = useNavigate();
 
     async function handleGgLogin() {
         await signInWithPopup(auth, ggProvider);
